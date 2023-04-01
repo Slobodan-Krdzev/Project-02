@@ -21,4 +21,108 @@ img {
   max-width: 100%;
 }
 
-/*# sourceMappingURL=main.css.map */
+.landing-main-section {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+@media (max-width: 768px) {
+  .landing-main-section {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+  }
+}
+
+body {
+  background-color: #FCEBD5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul {
+  margin-bottom: 0.9375rem;
+}
+
+.title,
+h2 {
+  font-family: "Reenie Beanie", cursive;
+  color: #A16A5E;
+}
+
+a {
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+.header {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.9375rem;
+  box-shadow: -1px 3px 5px 0px rgba(125, 125, 125, 0.75);
+  -webkit-box-shadow: -1px 3px 5px 0px rgba(113, 112, 112, 0.75);
+  -moz-box-shadow: -1px 3px 5px 0px rgba(112, 111, 111, 0.75);
+}
+.header .title {
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
+
+.landing-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-main-section {
+  flex-basis: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.landing-main-section .landing-main-menu {
+  margin-top: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.2rem;
+}
+.landing-main-section .landing-main-menu .togglers {
+  height: 176.5px;
+  padding: 0.9375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing-main-section .landing-main-menu .togglers h2 {
+  font-size: 2.5rem;
+}
+.landing-main-section .landing-main-menu .togglers:hover {
+  transform: scale3d(2);
+}
+.landing-main-section .landing-main-menu .artist-toggler {
+  background-color: #EDD5BB;
+  flex-direction: column;
+  align-items: flex-end;
+  transform-origin: bottom left;
+}
+.landing-main-section .landing-main-menu .artist-toggler #selectArtist {
+  background-color: inherit;
+  padding: 0.1875rem;
+  border-radius: 0.2rem;
+  border-color: #A16A5E;
+  color: #A16A5E;
+}
+.landing-main-section .landing-main-menu .visitor-toggler {
+  background-color: #A16A5E;
+  transform-origin: top right;
+}
+.landing-main-section .landing-main-menu .visitor-toggler h2 {
+  margin-bottom: 0;
+  color: #FCEBD5 !important;
+}/*# sourceMappingURL=main.css.map */
