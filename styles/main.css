@@ -1,24 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
-* {
-  box-sizing: border-box;
-}
+/* Error: Undefined mixin.
+ *    ,
+ * 8  | /     @include tablet-styles {
+ * 9  | |       padding-top: (var.$gutter-base);
+ * 10 | |       padding-bottom: (var.$gutter-base);
+ * 11 | \     }
+ *    '
+ *   abstracts\_mixins.scss 8:5      @use
+ *   core\_common-elements.scss 2:1  @forward
+ *   core\index.scss 2:1             @use
+ *   main.scss 2:1                   root stylesheet */
 
-body {
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-p,
-ul {
-  margin-top: 0;
-}
-
-img {
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
-  max-width: 100%;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 8  \2502  \250c      @include tablet-styles {\a 9  \2502  \2502        padding-top: (var.$gutter-base);\a 10 \2502  \2502        padding-bottom: (var.$gutter-base);\a 11 \2502  \2514      }\a    \2575 \a   abstracts\\_mixins.scss 8:5      @use\a   core\\_common-elements.scss 2:1  @forward\a   core\\index.scss 2:1             @use\a   main.scss 2:1                   root stylesheet";
 }
-
-/*# sourceMappingURL=main.css.map */
