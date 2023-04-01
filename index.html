@@ -4,10 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Street Artist</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <script src="https://kit.fontawesome.com/5167aa4b4c.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <h1>Hello</h1>
+    <!-- LANDING PAGE -->
+    <section class="page landing-page ">
+        <header class="header">
+            <a href="" class="title">Street ARtist</a>   
+        </header>
+
+        <section class="landing-main-section">
+            <section class="logo-wrapper">
+                <img class="logo" src="./assets/Logo.png" alt="Firm Logo">
+            </section>
+    
+            <section class="landing-main-menu">
+                <a href="#artists" class="togglers artist-toggler">
+                    <h2>Join as Artist</h2>
+                    <select id="selectArtist">
+                        <option value="">Choose</option>
+                        <option value="">Choose 2</option>
+
+                    </select>
+                </a>
+                <a href="#visitors" class="togglers visitor-toggler">
+                    <h2>Join as Visitor</h2>
+                </a>
+            </section>
+
+        </section>
+        
+    </section>
+    <!-- LANDING ENDS HERE -->
+    <!-- VISITOR HOME -->
+    <section class="page visitor-home-page">
+        <header class="header visitor-header ">
+            <a href="" class="logo-wrapper">
+                <img src="./assets/Logo.png" alt="Firm Logo">
+            </a>
+
+            <h1 class="title">Street ARtist</h1>
+
+            <a href="">
+                <i class="fa-solid fa-gavel"></i>
+            </a>
+        </header>
+    </section>
+    <!-- VISITOR HOME ENDS HERE -->
+    <script src="./Data/data.js"></script>
+    <script src="./script/main.js"></script>
 </body>
 </html>

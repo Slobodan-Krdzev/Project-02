@@ -2,3 +2,42 @@
 @use "../abstracts/mixins" as mix;
 @use "sass:math";
 
+body {
+  background-color: var.$color-light;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul {
+  margin-bottom: math.div(var.$gutter-base, 2);
+}
+
+.title,
+h2 {
+  font-family: var.$font-special;
+  color: var.$color-dark;
+}
+
+a{
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+.title{
+  font-size: 1.6rem;
+  margin-bottom: 0;
+  color: var.$color-dark;
+  align-self: center;
+}
+
+i {
+  font-size: 1.6rem;
+  color: var.$color-dark;
+  margin-left: 40px;
+}

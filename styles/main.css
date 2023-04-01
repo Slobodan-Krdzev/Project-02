@@ -1,22 +1,156 @@
-/* Error: Undefined mixin.
- *    ,
- * 8  | /     @include tablet-styles {
- * 9  | |       padding-top: (var.$gutter-base);
- * 10 | |       padding-bottom: (var.$gutter-base);
- * 11 | \     }
- *    '
- *   abstracts\_mixins.scss 8:5      @use
- *   core\_common-elements.scss 2:1  @forward
- *   core\index.scss 2:1             @use
- *   main.scss 2:1                   root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 8  \2502  \250c      @include tablet-styles {\a 9  \2502  \2502        padding-top: (var.$gutter-base);\a 10 \2502  \2502        padding-bottom: (var.$gutter-base);\a 11 \2502  \2514      }\a    \2575 \a   abstracts\\_mixins.scss 8:5      @use\a   core\\_common-elements.scss 2:1  @forward\a   core\\index.scss 2:1             @use\a   main.scss 2:1                   root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+* {
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.landing-main-section {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+@media (max-width: 768px) {
+  .landing-main-section {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+  }
+}
+
+body {
+  background-color: #FCEBD5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul {
+  margin-bottom: 0.9375rem;
+}
+
+.title,
+h2 {
+  font-family: "Reenie Beanie", cursive;
+  color: #A16A5E;
+}
+
+a {
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+.title {
+  font-size: 1.6rem;
+  margin-bottom: 0;
+  color: #A16A5E;
+  align-self: center;
+}
+
+i {
+  font-size: 1.6rem;
+  color: #A16A5E;
+  margin-left: 40px;
+}
+
+.header {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.9375rem;
+  box-shadow: -1px 3px 5px 0px rgba(125, 125, 125, 0.75);
+  -webkit-box-shadow: -1px 3px 5px 0px rgba(113, 112, 112, 0.75);
+  -moz-box-shadow: -1px 3px 5px 0px rgba(112, 111, 111, 0.75);
+}
+
+.visitor-header {
+  position: relative;
+  justify-content: space-between;
+}
+.visitor-header .logo-wrapper {
+  position: absolute;
+  top: 8px;
+}
+.visitor-header .title {
+  width: 40%;
+  margin-left: 140px;
+  margin-right: 20px;
+}
+
+.landing-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-main-section {
+  flex-basis: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.landing-main-section .landing-main-menu {
+  margin-top: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.2rem;
+  box-shadow: 0px 0px 11px 1px rgba(70, 70, 70, 0.7490196078);
+  -webkit-box-shadow: 0px 0px 11px 1px rgba(70, 70, 70, 0.7490196078);
+  -moz-box-shadow: 0px 0px 11px 1px rgba(70, 70, 70, 0.7490196078);
+}
+.landing-main-section .landing-main-menu .togglers {
+  height: 176.5px;
+  padding: 0.9375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing-main-section .landing-main-menu .togglers h2 {
+  font-size: 2.5rem;
+}
+.landing-main-section .landing-main-menu .togglers:hover {
+  transform: scale3d(2);
+}
+.landing-main-section .landing-main-menu .artist-toggler {
+  background-color: #EDD5BB;
+  flex-direction: column;
+  align-items: flex-end;
+  transform-origin: bottom left;
+}
+.landing-main-section .landing-main-menu .artist-toggler #selectArtist {
+  background-color: inherit;
+  padding: 0.1875rem;
+  border-radius: 0.2rem;
+  border-color: #A16A5E;
+  color: #A16A5E;
+}
+.landing-main-section .landing-main-menu .visitor-toggler {
+  background-color: #A16A5E;
+  transform-origin: top right;
+}
+.landing-main-section .landing-main-menu .visitor-toggler h2 {
+  margin-bottom: 0;
+  color: #FCEBD5 !important;
+}
+
+/*# sourceMappingURL=main.css.map */
