@@ -46,4 +46,17 @@ h2 {
 a {
   text-decoration: none;
   margin-bottom: 0;
+}
+
+.title {
+  font-size: 1.6rem;
+  margin-bottom: 0;
+  color: #A16A5E;
+  align-self: center;
+}
+
+i {
+  font-size: 1.6rem;
+  color: #A16A5E;
+  margin-left: 40px;
 }/*# sourceMappingURL=index.css.map */
